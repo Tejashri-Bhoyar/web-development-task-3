@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+        <h2>Temperature Converter</h2>
+        <p>Convert between Celsius, Fahrenheit and Kelvin</p>
+        <input type="number" id="tempInput" placeholder="Enter Temperature">
+        <select id="unitSelect">
+            <option value="C">Celsius</option>
+            <option value="F">Fahrenheit</option>
+            <option value="K">Kelvin</option>
+        </select>
+        <button class="convert-btn" onclick="convertTemperature()">Convert</button>
+        <button class="reset-btn" onclick="resetFields()">Reset</button>
+        <button class="clear-btn" onclick="clearResult()">Clear</button>
+        <div class="result" id="result"></div>
+    </div>
+    <footer>
+        Designed by <strong>Tejashri Bhoyar</strong> | 
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> | 
+        <a href="https://github.com" target="_blank">GitHub</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

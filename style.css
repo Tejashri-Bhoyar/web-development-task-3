@@ -1,0 +1,142 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #141e30, #243b55);
+    text-align: center;
+    margin: 0;
+    padding: 50px;
+    color: white;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    max-width: 450px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+    margin: auto;
+    margin-top: 60px;
+    backdrop-filter: blur(10px);
+}
+
+input, select, button{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+input {
+    width: 95%;
+}
+
+input, select {
+    background: white;
+    color: black;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    color: white;
+    margin-top: 12px;
+}
+
+.clear-btn {
+    background: linear-gradient(to right, #ff512f, #dd2476);
+}
+
+.clear-btn:hover {
+    background: linear-gradient(to right, #dd2476, #ff512f);
+    transform:  scale(1.05);
+}
+
+.convert-btn {
+    background: linear-gradient(to right, #008380, #00B4DB);
+}
+
+.convert-btn:hover {
+    background: linear-gradient(to right, #008400, #0083bb);
+    transform:  scale(1.05);
+}
+
+.reset-btn {
+    background: linear-gradient(to right, #11998e, #38ef7d);
+}
+.reset-btn:hover {
+    background: linear-gradient(to right, #38ef7d, #33998d);
+    transform:  scale(1.05);
+}
+
+.result {
+    font-size: 22px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.result.animate {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+.result.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+body.light .result {
+    color: #222 !important;
+}
+
+
+footer {
+    margin-top: 20px;
+    font-size: 14px;
+}
+footer a {
+    color: #00B4DB;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+/* Theme Toggle Button */
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Light Theme */
+body.light {
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    color: black;
+}
+
+body.light .container {
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+body.light input,
+body.light select {
+    background: #f0f0f0;
+    color: black;
+}
+
+body.light .result {
+    color: black;
+}

@@ -1,7 +1,7 @@
 # Internship Task 3 - Temperature Converter
 
 ## Task Description
-Develop a simple web application to convert temperatures between Celsius and Fahrenheit.
+Develop a simple web application to convert temperatures between Celsius, Kelvin and Fahrenheit.
 
 ## Status
 Core functionality implemented.
